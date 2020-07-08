@@ -42,7 +42,6 @@
 			<div class="row">
 				<div class="col-md-4 col-xs-12 col-sm-4">
 				</div>
-
 				<div class="col-md-4 col-xs-12 col-sm-4">
 					<div class="logo text-center">
 						<a href="index.html">
@@ -50,65 +49,42 @@
 						</a>
 					</div>
 				</div>
-					<button class="btn btn-info" onclick="location.href='dashboard.html';" type="button">Volver a General</button>
-
-				</div>
+				<button class="btn btn-info" href="index.html">Salir</button>
 			</div>
+		</div>
 		</div>
 	</section>
 
-	<section class="comercios">
-		<div>
-			<div class="row">
-				<div class="text-center">
-					<h1><b><span style="color:#3497DB";>Inicia tu registro por primera vez</h1>
-					<h4 class="textoinicio">
-						<b>Completa otros Datos</b> te tomará máximo 5 minutos.<br>
-						<b>Completa tus Canhastas</b> dependerá del número de productos <br>
-						y canastas a subir, por lo que <b>te recomendamos que vayas subiendo tus canastas <br>
-						y productos poco a poco </b>para que puedas tener ingresos cuanto antes.
-					</h4>
-				</div>
-			</div>
-			<div>
-	</section>
-	<section class="comerciosImagen">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-2 col-md-4 mb-3 comercio-col">
-				</div>
-				<div class="col-lg-4 col-md-4 mb-3 comercio-col">
-					<a href="#" target="blank">
-						<img class="w-100" src="images/completacanasta.svg" alt="ComercioLocal">
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 mb-3 comercio-col">
-					<a href="indexNombreubicacion.html">
-						<img class="w-100" src="images/completadatos.svg" alt="ComercioLocal">
-					</a>
-				</div>
-
-				<div class="col-lg-2 col-md-4 mb-3 comercio-col">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="section video-testimonial bg-1 overly-white text-center mt-50">
+	<section class="user-dashboard page-wrapper">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2><b>Muy pronto</b></h2>
-					<a href="#" target="blank">
-						<img class="applogo" src="images/GoogleStore.png" width="200px" height="60px" alt="Canhasta">
-					<a href="#" target="blank">
-						<img class="applogo" src="images/AppleStore.png" width="200px" height="60px" alt="Canhasta">
-					</a>
+					<ul class="list-inline dashboard-menu text-center">
+						<li><button onclick="location.href='dashboard.html';"
+								class="btn btn-primary active">General</button></li>
+						<li><button onclick="location.href='datosclientes.html';" class="btn btn-primary">Clientes</button></li>
+						Datos generales y boton de Datos bancarios y datos fiscales
+						Generales, pausar servicio, eliminar, editar, ultima entrada.
+					</ul>
+				
+					<div class="dashboard-wrapper user-dashboard">
+						<div class="media-body">
+							<h2 class="media-heading"><b>Bienvenid@</b></h2>
+							<p>Revisa todos los pedidos, direcciones y detalles de tus clientes en <b>Tus Clientes</b>. <br>
+							Actualiza tus datos generales, de pago o fiscales con Canhasta en <b>Tus Datos</b>. <br>
+							Edita tus datos de entrega, pagos, fiscales y tus productos o canastas que ven tus clientes en <b>Tus Canhastas
+							y Productos</b>.<br>
+							</p>
+							<p>Si requieres apoyo técnico o tienes alguna duda escríbenos a <a
+								href="mailto:tucanhasta@canhasta.com">tucanhasta@canhasta.com</a> o escríbenos por el Chat.</p> 
+							<p>Si requieres asesoría por la nueva Reforma Fiscal 2020 te podemos, <a
+								href="mailto:tucanhasta@canhasta.com">tucanhasta@canhasta.com</a>.</p> 
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 	<footer class="footer section text-center">
 		<div class="container">
@@ -116,7 +92,7 @@
 				<div class="col-md-12">
 					<ul class="social-media">
 						<li>
-							<a href="#" target="_blank">
+							<a href="https://www.facebook.com/canhastalocal/" target="_blank">
 								<i class="tf-ion-social-facebook"></i>
 							</a>
 						</li>
@@ -163,8 +139,6 @@
 	<script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 	<script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
 	<script src="plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
-	<script type="text/javascript"
-		src="plugins/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

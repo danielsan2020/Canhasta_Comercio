@@ -902,6 +902,11 @@ input[type="email"]:focus, textarea, input[type="password"]:focus, input[type="t
   color: #fff;
 }
 
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  background-color: #00A2FE;
+  border-color: #00A2FE;
+}
+
 .slider-item {
   text-align: center;
   background-size: cover;

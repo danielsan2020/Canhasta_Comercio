@@ -50,7 +50,7 @@
 						</a>
 					</div>
 				</div>
-					<button class="btn btn-info" onclick="location.href='dashboard.html';" type="button">Volver a Tu Perfil</button>
+					<button class="btn btn-info" onclick="location.href='dashboard.html';" type="button">Volver a General</button>
 				</div>
 			</div>
 		</div>
@@ -60,48 +60,123 @@
 		<div>
 			<div class="row">
 				<div class="text-center">
-					<h1><b><span style="color:#3497DB";>Actualiza tus datos</h1>
+					<h1><b><span style="color:#3497DB";>Agrega, actualiza y edita</h1>
 					<h4 class="textoinicio">
-						Sigue completando o incluyendo productos y canastas para incrementar tus ventas.<br>
-						<b>Te recomendamos que vayas subiendo tus canastas 
-						y productos poco a poco.</b><br>
-						Si requieres asesoría, fotos de calidad u otra cosa, canhasta está para hacerte crecer.
+						<b>Te recomendamos que vayas subiendo tus canastas y productos poco a poco.</b><br>
+						Si requieres asesoría, fotos de calidad o tienes dudas, Canhasta está para apoyarte.
 					</h4>
+					<div class="col-lg-1 col-md-1 mb-3 comercio-col">
+					</div>
+					<div class="col-lg-2 col-md-2 mb-3 comercio-col">
+						<a href="index1canastas.html" target="_blank">
+							<img class="w-100" src="images/editardatos.svg" alt="Editar Datos">
+						</a>
+					</div>
+					<div class="col-lg-2 col-md-2 mb-3 comercio-col">
+						<a href="canastalibre.html" target="_blank">
+							<img class="w-100" src="images/añadirproducto.svg" alt="Añadir Producto">
+						</a>
+					</div>
+					<div class="col-lg-2 col-md-2 mb-3 comercio-col">
+						<a href="canastaArmada.html" target="_blank">
+							<img class="w-100" src="images/añadirarmada.svg" alt="Añadir Canasta Armada">
+						</a>
+					</div>
+					<div class="col-lg-2 col-md-2 mb-3 comercio-col">
+						<a href="canastaFija.html" target="_blank">
+							<img class="w-100" src="images/añadirfija.svg" alt="Añadir Canasta Fija">
+						</a>
+					</div>
+					<div class="col-lg-2 col-md-2 mb-3 comercio-col">
+						<a href="productolanzamiento.html" target="_blank">
+							<img class="w-100" src="images/añadirlanzamiento.svg" alt="Añadir Lanzamiento">
+						</a>
+					</div>
+					<div class="col-lg-1 col-md-1 mb-3 comercio-col">
+					</div>
 				</div>
 			</div>
 			<div>
 	</section>
-	<section class="comerciosImagen">
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-lg-2 col-md-4 mb-3 comercio-col">
-				</div>
-				<div class="col-lg-4 col-md-4 mb-3 comercio-col">
-					<a href="index1canastas.html">
-						<img class="w-100" src="images/tuscanastas.svg" alt="ComercioLocal">
-					</a>
-				</div>
+	<div class="dashboard-wrapper user-dashboard">
+		<div class="table-responsive">
+			<div class="col-md-12">
+				  <h4><strong>Listado de Productos y Canastas</strong></h4>
 
-				<div class="col-lg-4 col-md-4 mb-3 comercio-col">
-					<a href="indexNombreubicacion.html">
-						<img class="w-100" src="images/tusdatos.svg" alt="ComercioLocal">
-					</a>
-				</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th class="text-center">Imagen</th>
+						<th class="text-center">Nombre del Producto</th>
+						<th class="text-center">Categoría</th>
+						<th class="text-center">Modalidad</th>
+						<th class="text-center">Estatus</th>
+						<th class="text-center">Precio de compra</th>
+						<th class="text-center">Precio de venta</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-center"><img src="images/shop/productos/albahaca.jpg" height="80px" width="80px" alt=""></td>
+						<td class="text-center">Albahaca</td>
+						<td class="text-center">Verduras</td>
+						<td class="text-center">Libre</td>
+						<td class="text-center">
+							<button class="btn btn-success">Activo</button>
+						</td>
+						<td class="text-center">$00</td>
+						<td class="text-center">$00</td>
+						<td>
+							<button data-toggle="tooltip" class="btn btn-info">Ver | Editar</button>
+							<button data-toggle="tooltip" class="btn btn-warning">Pausar</button>
+							<button data-toggle="tooltip" class="btn btn-danger">Eliminar</button>                                       
+						</td>
+					</tr>
 
-				<div class="col-lg-2 col-md-4 mb-3 comercio-col">
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-center"><img src="images/fondoCanasta.jpg" height="80px" width="80px" alt=""></td>
+						<td class="text-center">Canhasta Armada Básica</td>
+						<td class="text-center">-</td>
+						<td class="text-center">Armada</td>
+						<td class="text-center">
+							<button class="btn btn-warning">Pausado</button>
+						</td>
+						<td class="text-center">-</td>
+						<td class="text-center">$00</td>
+						<td>
+							<button data-toggle="tooltip" class="btn btn-info">Ver | Editar</button>
+							<button data-toggle="tooltip" class="btn btn-warning">Pausar</button>
+							<button data-toggle="tooltip" class="btn btn-danger">Eliminar</button>                                       
+						</td>
+					</tr>							
+						
+				</table>
+				<div class="custom-pagination text-right">
+					<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link" href="#">Previo</a></li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+						</ul>
+					</nav>
 				</div>
-			</div>
+				</tbody>
+			</table>
 		</div>
-	</section>
+	</div>
 
 	<div class="section video-testimonial bg-1 overly-white text-center mt-50">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<h2><b>Muy pronto</b></h2>
-					<a href="#" target="blank">
+					<a href="#" target="_blank">
 						<img class="applogo" src="images/GoogleStore.png" width="200px" height="60px" alt="Canhasta">
-					<a href="#" target="blank">
+					<a href="#" target="_blank">
 						<img class="applogo" src="images/AppleStore.png" width="200px" height="60px" alt="Canhasta">
 					</a>
 				</div>
@@ -115,17 +190,17 @@
 				<div class="col-md-12">
 					<ul class="social-media">
 						<li>
-							<a href="#" target="_blank">
+							<a href="#" target="__blank">
 								<i class="tf-ion-social-facebook"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#" target="_blank">
+							<a href="#" target="__blank">
 								<i class="tf-ion-social-instagram"></i>
 							</a>
 						</li>
 						<li>
-							<a href="#" target="_blank">
+							<a href="#" target="__blank">
 								<i class="tf-ion-social-twitter"></i>
 							</a>
 						</li>
@@ -151,7 +226,7 @@
 						</li>
 					</ul>
 					<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a
-							href="https://danielsan2020.github.io/FLIPA/" target="_blank">FLIPA </a></h6>
+							href="https://danielsan2020.github.io/FLIPA/" target="__blank">FLIPA </a></h6>
 				</div>
 			</div>
 		</div>
