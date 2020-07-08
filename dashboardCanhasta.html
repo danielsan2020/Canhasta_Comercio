@@ -59,28 +59,85 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<ul class="list-inline dashboard-menu text-center">
-						<li><button onclick="location.href='dashboard.html';"
-								class="btn btn-primary active">General</button></li>
-						<li><button onclick="location.href='datosclientes.html';" class="btn btn-primary">Clientes</button></li>
-						Datos generales y boton de Datos bancarios y datos fiscales
-						Generales, pausar servicio, eliminar, editar, ultima entrada.
-					</ul>
 				
 					<div class="dashboard-wrapper user-dashboard">
-						<div class="media-body">
-							<h2 class="media-heading"><b>Bienvenid@</b></h2>
-							<p>Revisa todos los pedidos, direcciones y detalles de tus clientes en <b>Tus Clientes</b>. <br>
-							Actualiza tus datos generales, de pago o fiscales con Canhasta en <b>Tus Datos</b>. <br>
-							Edita tus datos de entrega, pagos, fiscales y tus productos o canastas que ven tus clientes en <b>Tus Canhastas
-							y Productos</b>.<br>
-							</p>
-							<p>Si requieres apoyo técnico o tienes alguna duda escríbenos a <a
-								href="mailto:tucanhasta@canhasta.com">tucanhasta@canhasta.com</a> o escríbenos por el Chat.</p> 
-							<p>Si requieres asesoría por la nueva Reforma Fiscal 2020 te podemos, <a
-								href="mailto:tucanhasta@canhasta.com">tucanhasta@canhasta.com</a>.</p> 
+						<div class="table-responsive">
+							<div class="col-md-12">
+								  <h2><strong>Usuarios registrados:</strong></h2>
+
+							<table class="table">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Fecha registro</th>
+										<th>Nombre</th>
+										<th>Ciudad</th>
+										<th>Mail</th>
+										<th>Estatus</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>#451231</td>
+										<td>Mar 25, 2016</td>
+										<td>Abastos Co</td>
+										<td>CDMX</td>
+										<td>Mail</td>
+										<td><span class="label label-success">Activo</span></td>
+										<td><a href="#" class="btn btn-primary btn-sm">Ver sus productos</a></td>
+										<td><a href="dashboardCanhastaBancoFiscal.html" class="btn btn-danger btn-sm">Datos fiscal y bancarios</a></td>
+										<td><a href="#" class="btn btn-warning btn-sm">Pausar servicio</a></td>
+									</tr>
+
+									<tr>
+										<td>#451231</td>
+										<td>Mar 25, 2016</td>
+										<td>Abastos Co</td>
+										<td>CDMX</td>
+										<td>Mail</td>
+										<td><span class="label label-danger">Cancelado</span></td>
+										<td><a href="#" class="btn btn-primary btn-sm">Ver sus productos</a></td>
+										<td><a href="dashboardCanhastaBancoFiscal.html" class="btn btn-danger btn-sm">Datos fiscal y bancarios</a></td>
+										<td><a href="#" class="btn btn-warning btn-sm">Pausar servicio</a></td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
+					<div class="collapse multi-collapse" id="multiCollapseCliente">
+					<div class="dashboard-wrapper user-dashboard">
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="text-center">Nombre cliente</th>
+										<th class="text-center">Dirección</th>
+										<th class="text-center">Ciudad</th>
+										<th class="text-center">Email</th>
+										<th class="text-center">Celular</th>
+									</tr>
+								</thead>
+								<tbody>
+									<td class="text-center">Jose Luis</td>
+									<td class="text-center">San luis potosí</td>
+									<td class="text-center">CDMX</td>
+									<td class="text-center">Email</td>
+									<td class="text-center">55 2089 0217</td>
+									<td>
+										<div class="btn-group" role="group">
+											<button type="button" class="btn btn-info"><i class="tf-ion-close"
+													aria-hidden="true" title="Eliminar"></i></button>
+										</div>
+									</td>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 				</div>
 			</div>
 		</div>
@@ -128,7 +185,7 @@
 						</li>
 					</ul>
 					<h6>Copyright 2020. Todos los derechos reservados. Diseñado y desarrollado por <a
-							href="https://danielsan2020.github.io/FLIPA/" target="_blank">FLIPA </a></h6>
+							href="https://www.bilby.com.mx" target="_blank">bilby </a></h6>
 				</div>
 			</div>
 		</div>

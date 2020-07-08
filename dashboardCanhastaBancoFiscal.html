@@ -61,14 +61,9 @@
 			<div class="row">
 				<div class="col-md-12">
 					<ul class="list-inline dashboard-menu text-center">
-						<li><button onclick="location.href='dashboard.html';" class="btn btn-primary">General</button>
+						<li><button onclick="location.href='dashboardCanhasta.html';"
+								class="btn btn-primary">Volver</button>
 						</li>
-						<li><button onclick="location.href='datosclientes.html';" class="btn btn-primary">Tus
-								Clientes</button></li>
-						<li><button onclick="location.href='datoscomercio.html';" class="btn btn-primary active">Tus
-								Datos</button></li>
-						<li><button onclick="location.href='indexdashboard.html';" class="btn btn-primary">Tus Canhastas
-								y Productos 🍊</button></li>
 					</ul>
 				</div>
 			</div>
@@ -88,26 +83,20 @@
 						<div class="col">
 							<div class="dashboard-wrapper user-dashboard">
 								<div class="table-responsive">
-									<h2> <strong>Datos Generales:</strong></h2>
+									<h2> <strong>Datos Fiscales:</strong></h2>
 									<form class="text-left clearfix" action="index.html">
-										<div class="form-group col-lg-6">
-											<input type="text" class="form-control" disabled placeholder="Nombre">
-										</div>
-										<div class="form-group col-lg-6">
-											<input type="text" class="form-control" disabled placeholder="Apellidos">
-										</div>
 										<div class="form-group col-lg-6">
 											<input type="text" class="form-control" disabled
 												placeholder="Nombre comercio">
 										</div>
 										<div class="form-group col-lg-6">
+											<input type="text" class="form-control" disabled placeholder="RFC">
+										</div>
+										<div class="form-group col-lg-6">
 											<input type="email" class="form-control" placeholder="Email">
 										</div>
 										<div class="form-group col-lg-6">
-											<input type="tel" class="form-control" placeholder="Celular">
-										</div>
-										<div class="form-group col-lg-6">
-											<input type="password" class="form-control" placeholder="Contraseña">
+											<input type="text" class="form-control" placeholder="CP">
 										</div>
 										<div class="text-center col-lg-12">
 											<button type="submit"
@@ -122,10 +111,40 @@
 									<div class="dashboard-wrapper user-dashboard">
 										<div class="table-responsive">
 											<div class="text-center">
-												<a href="#" class="btn btn-mainregistro mt-20">Transferencia
+												<a href="#" target="_blank" class="btn btn-mainregistro mt-20"
+													data-toggle="modal" data-target="#QueesModalTransfer">Transferencia
 													bancaria</a>
-												<a href="#" class="btn btn-mainregistro mt-20">Depósito bancario</a>
-												<a class="btn btn-mainregistro mt-20">Tarjeta bancaria</a>
+
+												<!-- Button trigger modal -->
+												<!-- Modal -->
+												<div class="modal fade" id="QueesModalTransfer" tabindex="-1"
+													role="dialog" aria-labelledby="#QueesModalTransfer"
+													aria-hidden="true">
+													<div class="modal-dialog" role="document">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="QueesModalTransfer"><b>🏦
+																		Datos del comercio</b>
+																</h5>
+															</div>
+															<div class="modal-body">
+																<div class="modal-body">
+																	<b>Banco: Santander<br>
+																		Nombre: {Comercio local}<br>
+																		CLABE: 9393933939393939393939 <br>
+																		Asunto: Tu nombre completo </b><br>
+																	Una vez hecho el depósito envíalo a
+																	<b>tucanhasta@canhasta</b>. <br>
+																	Si requieres factura, solicítala en el mismo correo.
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-success"
+																	data-dismiss="modal">Aceptar</button>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 											<h2><strong>Datos Bancarios:</strong></h2>
 											<form class="checkout-form">
